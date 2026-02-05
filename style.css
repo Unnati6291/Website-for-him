@@ -56,11 +56,17 @@ button {
 .buttons button {
   margin: 0 10px;
 }
+.buttons {
+  position: relative;
+}
 
 .hearts span {
   position: absolute;
   color: rgba(255,255,255,0.8);
   animation: float 6s linear infinite;
+}
+#noBtn {
+  transition: all 0.2s ease;
 }
 .story {
   font-size: 1rem;
