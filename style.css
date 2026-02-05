@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #7e9aff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+
+.container, .card, .final {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  margin: 10px 0 30px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: white;
+  color: #ff4d6d;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin: 0 10px;
+}
+
+.hearts span {
+  position: absolute;
+  color: rgba(255,255,255,0.8);
+  animation: float 6s linear infinite;
+}
+.story {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 20px 0;
+  color: #fff;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
